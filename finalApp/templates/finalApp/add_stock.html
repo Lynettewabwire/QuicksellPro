@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add stock</title>
+</head>
+<body>
+{% block content %}
+<div class="page-header">
+		<h1>ADD NEW STOCK</h1>
+	</div>
+ <div class="container">
+	<div class="nav-bar">
+		<span>Home</span>
+		<span>Register</span>
+		<span>Contact Us</span>		
+				
+	</div> 
+
+<form method="POST", action="/finalApp/add_stock.html">
+	{% csrf_token %}
+		{{ stockform.as_p }}
+		{{ fields }}
+	
+</form>
+
+
+</div>
+{% endblock %}
+</body>
+</html>

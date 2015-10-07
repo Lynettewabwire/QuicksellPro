@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin page</title>
+</head>
+<body>
+	{% block content %}
+	<h1> Welcome admin</h1>
+	<form method="POST" action="/finalApp/admin_page.html/">
+		{{ adminform.as_p }}
+	</form>
+	<a href="/finalApp/add.html">Add to cart</a>
+	<a href="/finalApp/cart.html">View Cart</a>
+	<a href="/finalApp/logout.html">Logout</a>
+	{% endblock %}
+
+</body>
+</html>
