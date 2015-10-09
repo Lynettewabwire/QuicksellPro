@@ -738,7 +738,9 @@
  <div class="viewer">
 	{% block content %}
 	<h1>REGISTER HERE</h1>
+	
 		<form method="POST" action="">
+
 			{% csrf_token %}
 				{% for field in profile_form %}
 					{% if field.errors %}
@@ -756,8 +758,9 @@
 			
 			
 			<button type="Submit" align="right">Register</button>
-				
+			
 		</form>
+
 	{% endblock %}	
 </div>
 
